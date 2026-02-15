@@ -1,0 +1,7 @@
+{
+	"vec_type": "style-embed",
+	"vectors_file": "style-embed_wgan_generated_vectors.pt",
+	"embed_model_path": "models/tts/Embedding/embedding_function.pt",
+	"gan_model_name": "style-embed_wgan.pt",
+	"num_sampled": 500000,
+}
