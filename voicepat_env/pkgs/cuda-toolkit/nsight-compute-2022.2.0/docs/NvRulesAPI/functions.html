@@ -1,0 +1,310 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      <meta name="DC.Type" content="reference"></meta>
+      <meta name="DC.Title" content="Data Fields"></meta>
+      <meta name="DC.Format" content="XHTML"></meta>
+      <meta name="DC.Identifier" content="functions"></meta>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/commonltr.css"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/site.css"></link>
+      <title>NvRules API :: Nsight Compute Documentation</title>
+      <!--[if lt IE 9]>
+      <script src="../common/formatting/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript" charset="utf-8" src="../common/scripts/tynt/tynt.js"></script>
+      --&gt;
+      
+      <script src="https://assets.adobedtm.com/5d4962a43b79/c1061d2c5e7b/launch-191c2462b890.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.ba-hashchange.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.scrollintoview.min.js"></script>
+      <script type="text/javascript" src="../search/htmlFileList.js"></script>
+      <script type="text/javascript" src="../search/htmlFileInfoList.js"></script>
+      <script type="text/javascript" src="../search/nwSearchFnt.min.js"></script>
+      <script type="text/javascript" src="../search/stemmers/en_stemmer.min.js"></script>
+      <script type="text/javascript" src="../search/index-1.js"></script>
+      <script type="text/javascript" src="../search/index-2.js"></script>
+      <script type="text/javascript" src="../search/index-3.js"></script>
+      <link rel="canonical" href="https://developer.nvidia.com/NvRulesAPI/index.html"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/qwcode.highlight.css"></link>
+   </head>
+   <body>
+      
+      <header id="header"><span id="company">NVIDIA</span><span id="site-title">Nsight Compute Documentation</span><form id="search" method="get" action="search">
+            <input type="text" name="search-text"></input><fieldset id="search-location">
+               <legend>Search In:</legend>
+               <label><input type="radio" name="search-type" value="site"></input>Entire Site</label>
+               <label><input type="radio" name="search-type" value="document"></input>Just This Document</label></fieldset>
+            <button type="reset">clear search</button>
+            <button id="submit" type="submit">search</button></form>
+      </header>
+      <div id="site-content">
+         <nav id="site-nav">
+            <div class="category closed"><a href="../index.html" title="The root of the site.">Nsight Compute
+                  v2022.2.0</a></div>
+            <div class="category"><a href="index.html" title="NvRules API">NvRules API</a></div>
+            <ul>
+               <li>
+                  <div class="section-link"><a href="modules.html#modules">1.&nbsp;Modules</a></div>
+                  <ul>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__NM">1.1.&nbsp;NvRules non-member functions.</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__LW">1.2.&nbsp;NvRules Python garbage-collected classes.</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__HW">1.3.&nbsp;NvRules Tool lifetime-managed classes.</a></div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <div class="section-link"><a href="annotated.html#annotated">2.&nbsp;Data Structures</a></div>
+                  <ul>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IAction">2.1.&nbsp;NV::Rules::IAction</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IContext">2.2.&nbsp;NV::Rules::IContext</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IController">2.3.&nbsp;NV::Rules::IController</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IEvaluator">2.4.&nbsp;NV::Rules::IEvaluator</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IFrontend">2.5.&nbsp;NV::Rules::IFrontend</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IMetric">2.6.&nbsp;NV::Rules::IMetric</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo">2.7.&nbsp;NV::Rules::INvtxDomainInfo</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxRange">2.8.&nbsp;NV::Rules::INvtxRange</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxState">2.9.&nbsp;NV::Rules::INvtxState</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IRange">2.10.&nbsp;NV::Rules::IRange</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo">2.11.&nbsp;NV::Rules::ISourceInfo</a></div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <div class="section-link"><a href="functions.html#functions">3.&nbsp;Data Fields</a></div>
+               </li>
+               <li>
+                  <div class="section-link"><a href="notices-header.html#notices-header">Notices</a></div>
+                  <ul></ul>
+               </li>
+            </ul>
+         </nav>
+         <div id="resize-nav"></div>
+         <nav id="search-results">
+            <h2>Search Results</h2>
+            <ol></ol>
+         </nav>
+         
+         <div id="contents-container">
+            <div id="breadcrumbs-container">
+               <div id="breadcrumbs"><a href="annotated.html" shape="rect">&lt; Previous</a> | <a href="notices-header.html" shape="rect">Next &gt;</a></div>
+               <div id="release-info">NvRules API
+                  (<a href="../pdf/NvRulesAPI.pdf">PDF</a>)
+                  
+                  -
+                  
+                  v2022.2.0
+                  (<a href="https://developer.nvidia.com">older</a>)
+                  -
+                  Last updated April 11, 2022
+                  -
+                  <a href="mailto:devtools@nvidia.com?subject=Nsight Compute Documentation Feedback: NvRules API">Send Feedback</a>
+                  -
+                  <span class="st_facebook"></span><span class="st_twitter"></span><span class="st_linkedin"></span><span class="st_reddit"></span><span class="st_slashdot"></span><span class="st_tumblr"></span><span class="st_sharethis"></span></div>
+            </div>
+            <article id="contents">
+               <div class="topic nested1" id="functions"><a name="functions" shape="rect">
+                     <!-- --></a><h2 class="topictitle2">3.&nbsp;Data Fields</h2>
+                  <div class="body refbody">
+                     <div class="section">
+                        <p class="p">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field: </p>
+                     </div>
+                     <div class="section" id="functions__a"><a name="functions__a" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">A</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">action_by_idx()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface." shape="rect">NV::Rules::IRange</a></dd>
+                           <dt class="dt dlterm">actions_by_nvtx()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface." shape="rect">NV::Rules::IRange</a></dd>
+                           <dt class="dt dlterm">add_double_metric()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">add_integer_metric()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">add_string_metric()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">as_double()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                           <dt class="dt dlterm">as_string()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                           <dt class="dt dlterm">as_uint64()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__c"><a name="functions__c" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">C</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">category()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">color()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">controller()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface." shape="rect">NV::Rules::IContext</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__d"><a name="functions__d" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">D</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">domain_by_id()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">NV::Rules::INvtxState</a></dd>
+                           <dt class="dt dlterm">domains()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">NV::Rules::INvtxState</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__f"><a name="functions__f" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">F</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">file_name()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface." shape="rect">NV::Rules::ISourceInfo</a></dd>
+                           <dt class="dt dlterm">focus_metric()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface." shape="rect">NV::Rules::IFrontend</a></dd>
+                           <dt class="dt dlterm">frontend()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface." shape="rect">NV::Rules::IContext</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__h"><a name="functions__h" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">H</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">has_attributes()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">has_value()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__k"><a name="functions__k" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">K</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">kind()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__l"><a name="functions__l" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">L</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">line()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface." shape="rect">NV::Rules::ISourceInfo</a></dd>
+                           <dt class="dt dlterm">load_chart_from_file()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface." shape="rect">NV::Rules::IFrontend</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__m"><a name="functions__m" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">M</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">message()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dd class="dd not_first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface." shape="rect">NV::Rules::IFrontend</a></dd>
+                           <dt class="dt dlterm">metric_by_name()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">metric_names()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__n"><a name="functions__n" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">N</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">name()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                           <dd class="dd not_first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dd class="dd not_first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dd class="dd not_first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::Rules::INvtxDomainInfo</a></dd>
+                           <dt class="dt dlterm">num_actions()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface." shape="rect">NV::Rules::IRange</a></dd>
+                           <dt class="dt dlterm">num_instances()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::Rules::IMetric</a></dd>
+                           <dt class="dt dlterm">num_ranges()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface." shape="rect">NV::Rules::IContext</a></dd>
+                           <dt class="dt dlterm">nvtx_state()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__p"><a name="functions__p" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">P</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">payload_as_double()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">payload_as_string()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">payload_as_uint64()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">payload_type()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::Rules::INvtxRange</a></dd>
+                           <dt class="dt dlterm">propose_rule()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface." shape="rect">NV::Rules::IController</a></dd>
+                           <dt class="dt dlterm">ptx_by_pc()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">push_pop_range()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::Rules::INvtxDomainInfo</a></dd>
+                           <dt class="dt dlterm">push_pop_ranges()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::Rules::INvtxDomainInfo</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__r"><a name="functions__r" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">R</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">range_by_idx()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface." shape="rect">NV::Rules::IContext</a></dd>
+                           <dt class="dt dlterm">require_metric()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface." shape="rect">NV::Rules::IEvaluator</a></dd>
+                           <dt class="dt dlterm">require_rule()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface." shape="rect">NV::Rules::IEvaluator</a></dd>
+                        </dl>
+                     </div>
+                     <div class="section" id="functions__s"><a name="functions__s" shape="rect">
+                           <!-- --></a><h2 class="title sectiontitle">S</h2>
+                        <dl class="dl table-display-members">
+                           <dt class="dt dlterm">sass_by_pc()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">source_files()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">source_info()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::Rules::IAction</a></dd>
+                           <dt class="dt dlterm">start_end_range()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::Rules::INvtxDomainInfo</a></dd>
+                           <dt class="dt dlterm">start_end_ranges()</dt>
+                           <dd class="dd first"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::Rules::INvtxDomainInfo</a></dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               
+               <hr id="contents-end"></hr>
+               
+            </article>
+         </div>
+      </div>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/formatting/common.min.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-write.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-tracker.js"></script>
+      <script type="text/javascript">_satellite.pageBottom();</script>
+      <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "998dc202-a267-4d8e-bce9-14debadb8d92", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></body>
+</html>

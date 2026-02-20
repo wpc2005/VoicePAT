@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=NVIDIA Nsight Systems 2022.1.3
+GenericName=NVIDIA Nsight Systems
+Icon=${IconPath}
+Exec=${ExecPath}
+Keywords=nvidia;system;profiler;
+X-AppInstall-Keywords=nvidia;system;profiler;
+X-GNOME-Keywords=nvidia;system;profiler;
+Terminal=No
+Categories=Application;Development;

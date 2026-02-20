@@ -1,0 +1,683 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      <meta name="DC.Type" content="concept"></meta>
+      <meta name="DC.Title" content="Installation Guide"></meta>
+      <meta name="DC.Coverage" content="Nsight Systems"></meta>
+      <meta name="DC.subject" content="Nsight Systems, Overview, Requirements, Version, OS, CUDA, Shield, AGX, Xavier, Jetson, TX2, TX2i, TX1, Installation, Packages"></meta>
+      <meta name="keywords" content="Nsight Systems, Overview, Requirements, Version, OS, CUDA, Shield, AGX, Xavier, Jetson, TX2, TX2i, TX1, Installation, Packages"></meta>
+      <meta name="DC.Format" content="XHTML"></meta>
+      <meta name="DC.Identifier" content="abstract"></meta>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/commonltr.css"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/site.css"></link>
+      <title>Installation Guide :: Nsight Systems Documentation</title>
+      <!--[if lt IE 9]>
+      <script src="../common/formatting/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript" charset="utf-8" src="../common/scripts/tynt/tynt.js"></script>
+      --&gt;
+      
+      <script src="https://assets.adobedtm.com/5d4962a43b79/c1061d2c5e7b/launch-191c2462b890.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.ba-hashchange.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.scrollintoview.min.js"></script>
+      <script type="text/javascript" src="../search/htmlFileList.js"></script>
+      <script type="text/javascript" src="../search/htmlFileInfoList.js"></script>
+      <script type="text/javascript" src="../search/nwSearchFnt.min.js"></script>
+      <script type="text/javascript" src="../search/stemmers/en_stemmer.min.js"></script>
+      <script type="text/javascript" src="../search/index-1.js"></script>
+      <script type="text/javascript" src="../search/index-2.js"></script>
+      <script type="text/javascript" src="../search/index-3.js"></script>
+      <link rel="canonical" href="https://docs.nvidia.com/nsight-systems/InstallationGuide/index.html"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/qwcode.highlight.css"></link>
+   </head>
+   <body>
+      
+      <header id="header"><span id="company">NVIDIA</span><span id="site-title">Nsight Systems Documentation</span><form id="search" method="get" action="search">
+            <input type="text" name="search-text"></input><fieldset id="search-location">
+               <legend>Search In:</legend>
+               <label><input type="radio" name="search-type" value="site"></input>Entire Site</label>
+               <label><input type="radio" name="search-type" value="document"></input>Just This Document</label></fieldset>
+            <button type="reset">clear search</button>
+            <button id="submit" type="submit">search</button></form>
+      </header>
+      <div id="site-content">
+         <nav id="site-nav">
+            <div class="category closed"><a href="../index.html" title="The root of the site.">Nsight Systems
+                  v2022.1.1</a></div>
+            <div class="category"><a href="index.html" title="Installation Guide">Installation Guide</a></div>
+            <ul>
+               <li>
+                  <div class="section-link"><a href="#overview">1.&nbsp;Overview</a></div>
+               </li>
+               <li>
+                  <div class="section-link"><a href="#system-requirements">2.&nbsp;System Requirements</a></div>
+               </li>
+               <li>
+                  <div class="section-link"><a href="#getting-started">3.&nbsp;Getting Started Guide</a></div>
+                  <ul>
+                     <li>
+                        <div class="section-link"><a href="#finding-right-package">3.1.&nbsp;Finding the Right Package</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="#host-installation">3.2.&nbsp;Installing GUI on the Host System</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="#setting-up-cli">3.3.&nbsp;Optional: Setting up the CLI</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="#launch-gui">3.4.&nbsp;Launching the GUI</a></div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+         <div id="resize-nav"></div>
+         <nav id="search-results">
+            <h2>Search Results</h2>
+            <ol></ol>
+         </nav>
+         
+         <div id="contents-container">
+            <div id="breadcrumbs-container">
+               <div id="release-info">Installation Guide
+                  (<a href="../pdf/InstallationGuide.pdf">PDF</a>)
+                  
+                  -
+                  
+                  v2022.1.1
+                  (<a href="https://developer.nvidia.com/nsight-systems">older</a>)
+                  -
+                  Last updated January 15, 2022
+                  -
+                  <a href="mailto:devtools-support@nvidia.com?subject=Nsight Systems Documentation Feedback: Installation Guide">Send Feedback</a>
+                  -
+                  <span class="st_facebook"></span><span class="st_twitter"></span><span class="st_linkedin"></span><span class="st_reddit"></span><span class="st_slashdot"></span><span class="st_tumblr"></span><span class="st_sharethis"></span></div>
+            </div>
+            <article id="contents">
+               <div class="topic nested0" id="abstract"><a name="abstract" shape="rect">
+                     <!-- --></a><h2 class="title topictitle1"><a href="#abstract" name="abstract" shape="rect">Installation Guide</a></h2>
+                  <div class="body conbody">
+                     <p class="p">
+                        NVIDIA Nsight Systems installation guide.
+                        
+                     </p>
+                  </div>
+               </div>
+               <div class="topic nested0" id="overview"><a name="overview" shape="rect">
+                     <!-- --></a><h2 class="title topictitle1"><a href="#overview" name="overview" shape="rect">1.&nbsp;Overview</a></h2>
+                  <div class="body">
+                     <p class="p"><strong class="ph b"><span class="ph">Nsight Systems</span></strong> is a statistical sampling profiler with
+                        tracing features.  It is designed to work with devices and devkits based on
+                        NVIDIA Tegra SoCs (system-on-chip), Arm SBSA (server based system architecture)
+                        systems, IBM Power systems, and systems based on the x86_64 processor
+                        architecture that also include NVIDIA GPU(s).
+                     </p>
+                     <p class="p">Throughout this document we will refer to the device on which profiling
+                        happens as the <strong class="ph b">target</strong>, and the computer on which the user works and
+                        controls the profiling session as the <strong class="ph b">host</strong>. Note that for x86_64 based
+                        systems these may be on the same device, whereas with Tegra, Arm, or IBM Power
+                        based systems they will always be separate.
+                     </p>
+                     <div class="p">
+                        Furthermore, three different activities are distinguished as follows:
+                        
+                        <ul class="ul">
+                           <li class="li"><strong class="ph b">Profiling</strong> — The process of collecting any performance data. 
+                              A profiling session in <span class="ph">Nsight Systems</span> typically includes
+                              sampling and tracing.
+                           </li>
+                           <li class="li"><strong class="ph b">Sampling</strong> — The process of periodically stopping the <em class="ph i">profilee</em>
+                              (the application under investigation during the profiling session), typically
+                              to collect backtraces (call stacks of active threads), which allows you to
+                              understand statistically how much time is spent in each function. 
+                              Additionally, hardware counters can also be sampled.  This process is
+                              inherently imprecise when a low number of samples have been collected.
+                           </li>
+                           <li class="li"><strong class="ph b">Tracing</strong> — The process of collecting precise information about
+                              various activities happening in the profilee or in the system.  For example,
+                              profilee API execution may be traced providing the exact time and duration
+                              of a function call.
+                           </li>
+                        </ul>
+                     </div>
+                     <p class="p"><span class="ph">Nsight Systems</span> supports multiple generations of Tegra SoCs,
+                        NVIDIA discrete GPUs, and various CPU architectures, as well as various
+                        target and host operating systems. This documentation describes the full
+                        set of features available in any version of <span class="ph">Nsight Systems</span>.
+                        In the event that a feature is not available in all versions, that will be
+                        noted in the text. In general, <span class="ph">Nsight Systems Embedded Platforms Edition</span> indicates the
+                        package that supports Tegra processors for the embedded and automotive
+                        market and <span class="ph">Nsight Systems Workstation Edition</span> supports x86_64, IBM Power, and
+                        Arm server (SBSA) processors for the workstation and cluster market.
+                     </p>
+                     <p class="p">Common features that are supported by <span class="ph">Nsight Systems</span>
+                        on most platforms include the following:
+                     </p>
+                     <ul class="ul">
+                        <li class="li">
+                           <p class="p">Sampling of the profilee and collecting backtraces using multiple
+                              algorithms (such as frame pointers or DWARF data).  Building top-down, 
+                              bottom-up, and flat views as appropriate.  This information helps identify
+                              performance bottlenecks in CPU-intensive code.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Sampling or tracing system power behaviors, such as CPU frequency.</p>
+                        </li>
+                        <li class="li">
+                           <p class="p">(Only on <span class="ph">Nsight Systems Embedded Platforms Edition</span>)Sampling counters from Arm PMU
+                              (Performance Monitoring Unit).  Information such as cache misses gets
+                              statistically correlated with function execution.
+                           </p>
+                        </li>
+                        <li class="li">
+                           <p class="p">Support for multiple windows.  Users with multiple monitors can see
+                              multiple reports simultaneously, or have multiple views into the same report
+                              file.
+                           </p>
+                        </li>
+                     </ul>
+                     <div class="p">With <span class="ph">Nsight Systems</span>, a user could:
+                        
+                        <ul class="ul">
+                           <li class="li">
+                              <p class="p">Identify call paths that monopolize the CPU.</p>
+                           </li>
+                           <li class="li">
+                              <p class="p">Identify individual functions that monopolize the CPU (across different call paths).</p>
+                           </li>
+                           <li class="li">
+                              <p class="p">For <span class="ph">Nsight Systems Embedded Platforms Edition</span>, identify functions that have poor cache utilization.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">If platform supports CUDA, see visual representation of CUDA Runtime and Driver API calls, as well as CUDA GPU workload. <span class="ph">Nsight Systems</span> uses the CUDA Profiling Tools Interface (CUPTI), for more information, see:  <a class="xref" href="https://docs.nvidia.com/cuda/cupti/index.html" target="_blank" shape="rect">CUPTI documentation</a>.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">If the user annotates with NVIDIA Tools Extension (NVTX), see visual
+                                 representation of NVTX annotations: ranges, markers, and thread names.
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">For Windows targets, see visual representation of D3D12: which API calls
+                                 are being made on the CPU, graphic frames, stutter analysis, as well as GPU
+                                 workloads (command lists and debug ranges).
+                              </p>
+                           </li>
+                           <li class="li">
+                              <p class="p">For x86_64 targets, see visual representation of Vulkan: which API calls
+                                 are being made on the CPU, graphic frames, stutter analysis, as well as
+                                 Vulkan GPU workloads (command buffers and debug ranges).
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p class="p"></p>
+                     <p class="p hr"></p>
+                     <p class="p"></p>
+                  </div>
+               </div>
+               <div class="topic nested0" id="system-requirements"><a name="system-requirements" shape="rect">
+                     <!-- --></a><h2 class="title topictitle1"><a href="#system-requirements" name="system-requirements" shape="rect">2.&nbsp;System Requirements</a></h2>
+                  <div class="body">
+                     <p class="p"><span class="ph">Nsight Systems</span> supports multiple platforms. For simplicity,
+                        stentryink of these as <span class="ph">Nsight Systems Embedded Platforms Edition</span> and
+                        <span class="ph">Nsight Systems Workstation Edition</span>, where <span class="ph">Nsight Systems Workstation Edition</span>
+                        supports desktops, workstations, and clusters with x86_64, IBM Power, and
+                        Arm SBSA CPUs on Linux and Windows OSs, while <span class="ph">Nsight Systems Embedded Platforms Edition</span>
+                        supports NVIDIA Tegra products for the embedded and gaming
+                        space on Linux for Tegra and QNX OSs.
+                        
+                     </p>
+                  </div>
+                  <div class="topic nested1" id="supported-platforms"><a name="supported-platforms" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#supported-platforms" name="supported-platforms" shape="rect">Supported Platforms</a></h3>
+                     <div class="body">
+                        <p class="p">
+                           Depending on your OS, different GPUs are supported
+                        </p>
+                        <p class="p">
+                           L4T (Linux for Tegra)
+                        </p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Jetson AGX Xavier</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Jetson TX2</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Jetson TX2i</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Jetson TX</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Jetson Nano</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Jetson Xavier NX</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p">x86_64, IBM Power (from Power 9),  or Arm SBSA</p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">NVIDIA GPU architectures starting with Pascal</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">OS (64 bit only)</p>
+                                 <ul class="ul">
+                                    <li class="li">
+                                       <p class="p">Ubuntu 18.04 and 20.04</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">CentOS and RedHat Enterprise Linux 7.4+ with kernel version 3.10.0-693 or later.</p>
+                                    </li>
+                                    <li class="li">
+                                       <p class="p">Windows 10, 11</p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="cuda-support"><a name="cuda-support" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#cuda-support" name="cuda-support" shape="rect">CUDA Version</a></h3>
+                     <div class="body">
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p"><span class="ph">Nsight Systems</span> supports CUDA 10.0, 10.1, 10.2, and
+                                    11.X for most platforms
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p"><span class="ph">Nsight Systems</span> on Arm SBSA supports 10.2 and 11.X
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p">Note that CUDA version and driver version must be compatible.</p>
+                        <blockquote class="lq">
+                           <div class="p">
+                              <table cellpadding="4" cellspacing="0" summary="" border="1" class="simpletable">
+                                 <tr class="sthead">
+                                    <th valign="bottom" align="left" id="d54e378" class="stentry" width="50%" rowspan="1" colspan="1">CUDA Version</th>
+                                    <th valign="bottom" align="left" id="d54e381" class="stentry" width="50%" rowspan="1" colspan="1">Driver minimum version</th>
+                                 </tr>
+                                 <tr class="strow">
+                                    <td valign="top" headers="d54e378" class="stentry" rowspan="1" colspan="1">11.0</td>
+                                    <td valign="top" headers="d54e381" class="stentry" rowspan="1" colspan="1">450</td>
+                                 </tr>
+                                 <tr class="strow">
+                                    <td valign="top" headers="d54e378" class="stentry" rowspan="1" colspan="1">10.2</td>
+                                    <td valign="top" headers="d54e381" class="stentry" rowspan="1" colspan="1">440.30</td>
+                                 </tr>
+                                 <tr class="strow">
+                                    <td valign="top" headers="d54e378" class="stentry" rowspan="1" colspan="1">10.1</td>
+                                    <td valign="top" headers="d54e381" class="stentry" rowspan="1" colspan="1">418.39</td>
+                                 </tr>
+                                 <tr class="strow">
+                                    <td valign="top" headers="d54e378" class="stentry" rowspan="1" colspan="1">10.0</td>
+                                    <td valign="top" headers="d54e381" class="stentry" rowspan="1" colspan="1">410.48</td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </blockquote>
+                        <p class="p">From CUDA 11.X on, any driver from 450 on will be supported, although new
+                           features introduced in more recent drivers will not be available.
+                        </p>
+                        <p class="p">For information about which drivers were specifically released with
+                           each toolkit, see
+                           <a class="xref" href="https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions" target="_blank" shape="rect">CUDA Toolkit Release Notes - Major
+                              Component Versions</a></p>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="linux-requirements"><a name="linux-requirements" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#linux-requirements" name="linux-requirements" shape="rect">Requirements for x86_64, Power, and Arm SBSA Targets on Linux</a></h3>
+                     <div class="body">
+                        <p class="p">When attaching to x86_64, Power, or Arm SBSA Linux-based target from the
+                           GUI on the host, the connection is established through SSH.
+                        </p>
+                        <p class="p"><strong class="ph b">Use of Linux Perf</strong>: To collect thread scheduling data and IP
+                           (instruction pointer) samples, the Linux operating system's perf_event_paranoid 
+                           level must be 2 or less. Use the following command to check:
+                        </p>
+                        <blockquote class="lq"><pre xml:space="preserve">cat /proc/sys/kernel/perf_event_paranoid</pre></blockquote>
+                        <p class="p">If the output is &gt;2, then do the following to temporarily adjust
+                           the paranoid level (note that this has to be done after each reboot):
+                        </p>
+                        <blockquote class="lq"><pre xml:space="preserve">sudo sh -c 'echo 2 &gt;/proc/sys/kernel/perf_event_paranoid'</pre></blockquote>
+                        <p class="p">To make the change permanent, use the following command:</p>
+                        <blockquote class="lq"><pre xml:space="preserve">sudo sh -c 'echo kernel.perf_event_paranoid=2 &gt; /etc/sysctl.d/local.conf'</pre></blockquote>
+                        <div class="p"><strong class="ph b">Kernel version</strong>: To collect thread scheduling data and IP (instruction pointer) samples and backtraces, the kernel version must be:
+                           
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">3.10.0-693 or later for CentOS and RedHat Enterprise Linux 7.4+</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">4.3 or greater for all other distros including Ubuntu</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p">To check the version number of the kernel on a target device, run the
+                           following command on the device:
+                        </p>
+                        <blockquote class="lq"><pre xml:space="preserve">uname -a</pre></blockquote>
+                        <p class="p">Note that only CentOS, RedHat, and Ubuntu distros are tested/confirmed
+                           to work correctly.
+                        </p>
+                        <p class="p"><strong class="ph b">glibc version</strong>: To check the glibc version on a target device, run
+                           the following command:
+                        </p>
+                        <blockquote class="lq"><pre xml:space="preserve">ldd --version</pre></blockquote>
+                        <p class="p"><span class="ph">Nsight Systems</span> requires glibc 2.17 or more recent.
+                        </p>
+                        <p class="p"><strong class="ph b">CUDA</strong>: See above for supported CUDA versions in this release. Use the
+                           deviceQuery command to determine the CUDA driver and runtime versions on
+                           the system. the deviceQuery command is available in the CUDA SDK. It is
+                           normally installed at:
+                        </p>
+                        <blockquote class="lq"><pre xml:space="preserve">/usr/local/cuda/samples/1_Utilities/deviceQuery</pre></blockquote>
+                        <p class="p">Only pure 64-bit environments are supported. In other words, 32-bit
+                           systems or 32-bit processes running within a 64-bit environment are not
+                           supported.
+                        </p>
+                        <p class="p"><span class="ph">Nsight Systems</span> requires write permission to the
+                           <samp class="ph codeph">/var/lock</samp> directory on the target system.
+                        </p>
+                        <p class="p"><strong class="ph b">Docker</strong>: See Collecting Data within a Docker section of
+                           <a class="xref" href="../profiling/index.html#docker-profiling" shape="rect">Profiling in a Docker on Linux Devices</a> for more information.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="windows-target"><a name="windows-target" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#windows-target" name="windows-target" shape="rect">x86_64 Windows Target Device Requirements</a></h3>
+                     <div class="body">
+                        <div class="p"><strong class="ph b">DX12 Requires</strong>:
+                           
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Windows 10 with NVIDIA Driver 411.63 or higher for DX12 trace</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Windows 10 April 2018 Update (version 1803, AKA Redstone 4) with
+                                    NVIDIA Driver 411.63 or higher for DirectX Ray Tracing, and tracing DX12
+                                    Copy command queues.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="host-application-requirements"><a name="host-application-requirements" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#host-application-requirements" name="host-application-requirements" shape="rect">Host Application Requirements</a></h3>
+                     <div class="body">
+                        <div class="p">The <span class="ph">Nsight Systems</span> host application runs on the following host platforms:
+                           
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Windows 10, Windows Server 2019. Only 64-bit versions are supported.</p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Linux Ubuntu 14.04 and higher are known to work, running on other modern distributions should be possible as well.  Only 64-bit
+                                    versions are supported.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">OS X 10.10 "Yosemite" and higher.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p"></p>
+                        <p class="p hr"></p>
+                        <p class="p"></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="topic nested0" id="getting-started"><a name="getting-started" shape="rect">
+                     <!-- --></a><h2 class="title topictitle1"><a href="#getting-started" name="getting-started" shape="rect">3.&nbsp;Getting Started Guide</a></h2>
+                  <div class="body">
+                     <p class="p"></p>
+                  </div>
+                  <div class="topic nested1" id="finding-right-package"><a name="finding-right-package" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#finding-right-package" name="finding-right-package" shape="rect">3.1.&nbsp;Finding the Right Package</a></h3>
+                     <div class="body">
+                        <div class="p"><span class="ph">Nsight Systems</span> is available for multiple targets and
+                           multiple host OSs. To choose the right package, first consider the target
+                           system to be analyzed.
+                           
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">For Tegra target systems, select <span class="ph">Nsight Systems</span> for Tegra
+                                    available as part of <a class="xref" href="https://developer.nvidia.com/embedded/jetpack" target="_blank" shape="rect">NVIDIA JetPack SDK</a>.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">For x86_64, IBM Power target systems, or Arm SBSA select from the
+                                    target packages from <span class="ph">Nsight Systems</span> for Workstations,
+                                    available from <a class="xref" href="https://developer.nvidia.com/nsight-systems" target="_blank" shape="rect">https://developer.nvidia.com/nsight-systems</a>.
+                                    This web release will always contain the latest and greatest
+                                    <span class="ph">Nsight Systems</span> features.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">The x86_64, IBM Power, and Arm SBSA target versions of
+                                    <span class="ph">Nsight Systems</span> are also available in the
+                                    <a class="xref" href="https://developer.nvidia.com/cuda-downloads" target="_blank" shape="rect">CUDA Toolkit.</a></p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p">Each package is limited to one architecture. For example, Tegra packages
+                           do not contain support for profiling x86 targets, and x86 packages do not
+                           contain support for profiling Tegra targets.
+                        </p>
+                        <p class="p">After choosing an appropriate target version, select the package
+                           corresponding to the host OS, the OS on the system where results will be
+                           viewed. These packages are in the form of common installer types: .msi
+                           for Windows; .run, .rpm, and .deb for x86 Linux; .deb and .rpm for Linux
+                           on IBM Power; and .dmg for the macOS installer.
+                        </p>
+                        <p class="p">Note: the IBM Power and Arm SBSA packages do not have a GUI for
+                           visualization of the result. If you wish to visualize your result, please
+                           download and install the GUI available for macOS, x86_64 Linux, or Windows
+                           systems.
+                        </p>
+                        <p class="p"><strong class="ph b">Tegra packages</strong></p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Windows host – Install .msi on Windows machine. Enables remote access
+                                    to Tegra device for profiling.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Linux host  – Install .run on Linux system. Enables remote access to
+                                    Tegra device for profiling.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">macOS host – Install .dmg on macOS machine. Enables remote access to
+                                    Tegra device for profiling.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p"><strong class="ph b">x86_64 packages</strong></p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Windows host – Install .msi on Windows machine. Enables remote access
+                                    to Linux x86_64 or Windows devices for profiling as well as running on
+                                    local system.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Linux host  – Install .run, .rpm, or .deb on Linux system. Enables
+                                    remote access to Linux x86_64 or Windows devices for profiling or running
+                                    collection on localhost.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">Linux CLI only – The Linux CLI is shipped in all x86 packages, but if
+                                    you just want the CLI, we have a package for that. Install .deb on Linux
+                                    system. Enables only CLI collection, report can be imported or opened in
+                                    x86_64 host.
+                                 </p>
+                              </li>
+                              <li class="li">
+                                 <p class="p">macOS host – Install .dmg on macOS machine. Enables remote access to
+                                    Linux x86_64 device for profiling.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p"><strong class="ph b">IBM Power packages</strong></p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Power CLI only - The IBM Power support does not include a host GUI.
+                                    Install .deb or .rpm on your Power system. Enables only CLI collection,
+                                    report can be imported or opened in GUI on any supported host platform.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p class="p"><strong class="ph b">Arm SBSA packages</strong></p>
+                        <div class="p">
+                           <ul class="ul">
+                              <li class="li">
+                                 <p class="p">Arm SBSA CLI only - Arm SBSA support does not include a host GUI.
+                                    Install .deb or .rpm on your Arm SBSA system. Enables only CLI collection,
+                                    report can be imported or opened in GUI on any supported host platform.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="host-installation"><a name="host-installation" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#host-installation" name="host-installation" shape="rect">3.2.&nbsp;Installing GUI on the Host System</a></h3>
+                     <div class="body">
+                        <p class="p">
+                           Copy the appropriate file to your host system in a directory where you
+                           have write and execute permissions. Run the install file, accept the EULA,
+                           and <span class="ph">Nsight Systems</span> will install on your system.
+                        </p>
+                        <p class="p">
+                           On Linux, there are special options to enable automated installation.
+                           Running the installer with the <samp class="ph codeph">--accept</samp> flag will
+                           automatically accept the EULA, running with the <samp class="ph codeph">--accept</samp>
+                           flag and the <samp class="ph codeph">--quiet</samp> flag will automatically accept the
+                           EULA without printing to stdout. Running with <samp class="ph codeph">--quiet</samp>
+                           without <samp class="ph codeph">--accept</samp> will display an error.
+                        </p>
+                        <p class="p">
+                           The installation will create a Host directory for this host and a Target
+                           directory for each target this <span class="ph">Nsight Systems</span> package
+                           supports.
+                        </p>
+                        <p class="p">All binaries needed to collect data on a target device will be
+                           installed on the target by the host on first connection to the device.
+                           There is no need to install the package on the target device.
+                        </p>
+                        <p class="p">
+                           If installing from the CUDA Toolkit, see the <a class="xref" href="https://docs.nvidia.com/cuda/" target="_blank" shape="rect">CUDA Toolkit documentation</a>.
+                           
+                        </p>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="setting-up-cli"><a name="setting-up-cli" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#setting-up-cli" name="setting-up-cli" shape="rect">3.3.&nbsp;Optional: Setting up the CLI</a></h3>
+                     <div class="body">
+                        <p class="p">
+                           All <span class="ph">Nsight Systems</span> targets can be profiled using the CLI. IBM
+                           Power and Arm SBSA targets can only be profiled using the CLI. The CLI
+                           is especially helpful when scripts are used to run unattended collections
+                           or when access to the target system via ssh is not possible. In particular,
+                           this can be used to enable collection in a Docker container.
+                        </p>
+                        <p class="p"> The CLI can be found in the Target directory of the <span class="ph">Nsight Systems</span>
+                           installation. Users who want to install the CLI as a standalone tool can
+                           do so by copying the files within the Target directory to the location of
+                           their choice.
+                        </p>
+                        <p class="p">
+                           If you wish to run the CLI without root (recommended mode) you will
+                           want to install in a directory where you have full access.
+                        </p>
+                        <p class="p">
+                           Once you have the CLI set up, you can use the
+                           <samp class="ph codeph"><span class="ph">nsys</span> status -e</samp> command to check your
+                           environment.
+                        </p><pre xml:space="preserve">
+       ~$ nsys status -e
+       
+       Sampling Environment Check
+       Linux Kernel Paranoid Level = 1: OK
+       Linux Distribution = Ubuntu
+       Linux Kernel Version = 4.15.0-109-generic: OK
+       Linux perf_event_open syscall available: OK
+       Sampling trigger event available: OK
+       Intel(c) Last Branch Record support: Available
+       Sampling Environment: OK
+       </pre><p class="p">
+                           This status check allows you to ensure that the system requirements for 
+                           CPU sampling using <span class="ph">Nsight Systems</span> are met in your local
+                           environment. If the Sampling Environment is not OK, you will still be
+                           able to run various trace operations.
+                        </p>
+                        <p class="p">
+                           Intel(c) Last Branch Record allows tools, including <span class="ph">Nsight Systems</span>
+                           to use hardware to quickly get limited stack information. <span class="ph">Nsight Systems</span>
+                           will use this method for stack resolution by default if available.
+                        </p>
+                        <p class="p">
+                           For information about changing these environment settings, see System
+                           Requirements section in the Installation Guide. For information about changing
+                           the backtrace method, see Profiling from the CLI in the User Guide.
+                        </p>
+                        <p class="p">
+                           To get started using the CLI, run <samp class="ph codeph">nsys --help</samp> for a list of options or
+                           see
+                           Profiling Applications from the CLI in the User Guide
+                           for full documentation.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="topic nested1" id="launch-gui"><a name="launch-gui" shape="rect">
+                        <!-- --></a><h3 class="title topictitle2"><a href="#launch-gui" name="launch-gui" shape="rect">3.4.&nbsp;Launching the GUI</a></h3>
+                     <div class="body">
+                        <p class="p">
+                           Depending on your OS, <span class="ph">Nsight Systems</span> will have installed
+                           an icon on your host desktop that you can use to launch the GUI. To
+                           launch the GUI directly, run the <samp class="ph codeph">nsight-sys</samp> executable in the Host
+                           sub-directory of your installation.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               
+               <hr id="contents-end"></hr>
+               
+            </article>
+         </div>
+      </div>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/formatting/common.min.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-write.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-tracker.js"></script>
+      <script type="text/javascript">_satellite.pageBottom();</script>
+      <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "998dc202-a267-4d8e-bce9-14debadb8d92", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></body>
+</html>

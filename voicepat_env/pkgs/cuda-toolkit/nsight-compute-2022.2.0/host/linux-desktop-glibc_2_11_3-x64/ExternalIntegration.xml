@@ -1,0 +1,23 @@
+<plugin xmlns="http://schemas.nvidia.com/devtools/launcher">
+    <tools>
+        <tool
+            name="Nsight Compute"
+            id="compute"
+            description="Nsight Compute is a standalone tool for profiling and optimizing your CUDA applications. For more information, please visit https://developer.nvidia.com/nsight-compute."
+            relative-path="./ncu-ui"
+            order="0"
+            version="2022.2.0.0"
+            version-updates-table="http://developer.download.nvidia.com/NsightCompute/VersionUpgrades.json">
+            <commands>
+                <command
+                    name="Profile"
+                    id="profile"
+                    arguments="--project-id=$(project-id) --project-name=$(project-name) --activity-name=Profile --target-executable=$(local-debugger-command) --target-arguments=$(project-start-args) --target-working-directory=$(project-working-dir) --target-environment=$(project-env-vars)"/>
+                <command
+                    name="Interactive Profile"
+                    id="interactive-profile"
+                    arguments="--project-id=$(project-id) --project-name=$(project-name) --activity-name=&quot;Interactive Profile&quot; --target-executable=$(local-debugger-command) --target-arguments=$(project-start-args) --target-working-directory=$(project-working-dir) --target-environment=$(project-env-vars)"/>
+            </commands>
+       </tool>
+    </tools>
+</plugin>

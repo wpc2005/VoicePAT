@@ -1,0 +1,1095 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      <meta name="DC.Type" content="reference"></meta>
+      <meta name="DC.Title" content="Data Structures"></meta>
+      <meta name="DC.Format" content="XHTML"></meta>
+      <meta name="DC.Identifier" content="annotated"></meta>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/commonltr.css"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/site.css"></link>
+      <title>NvRules API :: Nsight Compute Documentation</title>
+      <!--[if lt IE 9]>
+      <script src="../common/formatting/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+      <script type="text/javascript" charset="utf-8" src="../common/scripts/tynt/tynt.js"></script>
+      --&gt;
+      
+      <script src="https://assets.adobedtm.com/5d4962a43b79/c1061d2c5e7b/launch-191c2462b890.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.ba-hashchange.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../common/formatting/jquery.scrollintoview.min.js"></script>
+      <script type="text/javascript" src="../search/htmlFileList.js"></script>
+      <script type="text/javascript" src="../search/htmlFileInfoList.js"></script>
+      <script type="text/javascript" src="../search/nwSearchFnt.min.js"></script>
+      <script type="text/javascript" src="../search/stemmers/en_stemmer.min.js"></script>
+      <script type="text/javascript" src="../search/index-1.js"></script>
+      <script type="text/javascript" src="../search/index-2.js"></script>
+      <script type="text/javascript" src="../search/index-3.js"></script>
+      <link rel="canonical" href="https://developer.nvidia.com/NvRulesAPI/index.html"></link>
+      <link rel="stylesheet" type="text/css" href="../common/formatting/qwcode.highlight.css"></link>
+   </head>
+   <body>
+      
+      <header id="header"><span id="company">NVIDIA</span><span id="site-title">Nsight Compute Documentation</span><form id="search" method="get" action="search">
+            <input type="text" name="search-text"></input><fieldset id="search-location">
+               <legend>Search In:</legend>
+               <label><input type="radio" name="search-type" value="site"></input>Entire Site</label>
+               <label><input type="radio" name="search-type" value="document"></input>Just This Document</label></fieldset>
+            <button type="reset">clear search</button>
+            <button id="submit" type="submit">search</button></form>
+      </header>
+      <div id="site-content">
+         <nav id="site-nav">
+            <div class="category closed"><a href="../index.html" title="The root of the site.">Nsight Compute
+                  v2022.2.0</a></div>
+            <div class="category"><a href="index.html" title="NvRules API">NvRules API</a></div>
+            <ul>
+               <li>
+                  <div class="section-link"><a href="modules.html#modules">1.&nbsp;Modules</a></div>
+                  <ul>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__NM">1.1.&nbsp;NvRules non-member functions.</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__LW">1.2.&nbsp;NvRules Python garbage-collected classes.</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="modules.html#group__NVRULES__HW">1.3.&nbsp;NvRules Tool lifetime-managed classes.</a></div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <div class="section-link"><a href="annotated.html#annotated">2.&nbsp;Data Structures</a></div>
+                  <ul>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IAction">2.1.&nbsp;NV::Rules::IAction</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IContext">2.2.&nbsp;NV::Rules::IContext</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IController">2.3.&nbsp;NV::Rules::IController</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IEvaluator">2.4.&nbsp;NV::Rules::IEvaluator</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IFrontend">2.5.&nbsp;NV::Rules::IFrontend</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IMetric">2.6.&nbsp;NV::Rules::IMetric</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo">2.7.&nbsp;NV::Rules::INvtxDomainInfo</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxRange">2.8.&nbsp;NV::Rules::INvtxRange</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1INvtxState">2.9.&nbsp;NV::Rules::INvtxState</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1IRange">2.10.&nbsp;NV::Rules::IRange</a></div>
+                     </li>
+                     <li>
+                        <div class="section-link"><a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo">2.11.&nbsp;NV::Rules::ISourceInfo</a></div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <div class="section-link"><a href="functions.html#functions">3.&nbsp;Data Fields</a></div>
+               </li>
+               <li>
+                  <div class="section-link"><a href="notices-header.html#notices-header">Notices</a></div>
+                  <ul></ul>
+               </li>
+            </ul>
+         </nav>
+         <div id="resize-nav"></div>
+         <nav id="search-results">
+            <h2>Search Results</h2>
+            <ol></ol>
+         </nav>
+         
+         <div id="contents-container">
+            <div id="breadcrumbs-container">
+               <div id="breadcrumbs"><a href="modules.html" shape="rect">&lt; Previous</a> | <a href="functions.html" shape="rect">Next &gt;</a></div>
+               <div id="release-info">NvRules API
+                  (<a href="../pdf/NvRulesAPI.pdf">PDF</a>)
+                  
+                  -
+                  
+                  v2022.2.0
+                  (<a href="https://developer.nvidia.com">older</a>)
+                  -
+                  Last updated April 11, 2022
+                  -
+                  <a href="mailto:devtools@nvidia.com?subject=Nsight Compute Documentation Feedback: NvRules API">Send Feedback</a>
+                  -
+                  <span class="st_facebook"></span><span class="st_twitter"></span><span class="st_linkedin"></span><span class="st_reddit"></span><span class="st_slashdot"></span><span class="st_tumblr"></span><span class="st_sharethis"></span></div>
+            </div>
+            <article id="contents">
+               <div class="topic nested1" id="annotated"><a name="annotated" shape="rect">
+                     <!-- --></a><h2 class="topictitle2">2.&nbsp;Data Structures</h2>
+                  <div class="body refbody">
+                     <div class="section">
+                        <p class="p">Here are the data structures with brief descriptions:</p>
+                        <dl class="dl table-display">
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">NV::​Rules::​IAction</a></dt>
+                           <dd class="dd">Action interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface." shape="rect">NV::​Rules::​IContext</a></dt>
+                           <dd class="dd">Context interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface." shape="rect">NV::​Rules::​IController</a></dt>
+                           <dd class="dd">Controller interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface." shape="rect">NV::​Rules::​IEvaluator</a></dt>
+                           <dd class="dd">Evaluator interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface." shape="rect">NV::​Rules::​IFrontend</a></dt>
+                           <dd class="dd">Frontend interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">NV::​Rules::​IMetric</a></dt>
+                           <dd class="dd">Metric interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface." shape="rect">NV::​Rules::​INvtxDomainInfo</a></dt>
+                           <dd class="dd">NvtxDomainInfo interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">NV::​Rules::​INvtxRange</a></dt>
+                           <dd class="dd">NvtxRange interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">NV::​Rules::​INvtxState</a></dt>
+                           <dd class="dd">NvtxState interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface." shape="rect">NV::​Rules::​IRange</a></dt>
+                           <dd class="dd">Range interface</dd>
+                           <dt class="dt dlterm"><a class="xref" href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface." shape="rect">NV::​Rules::​ISourceInfo</a></dt>
+                           <dd class="dd">SourceInfo interface</dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IAction"><a name="classNV_1_1Rules_1_1IAction" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.1.&nbsp;NV::Rules::IAction Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents an activity such as a CUDA kernel on a single range, for which zero or more metrics were collected </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1a4a8c1abae562cd537f16417ec540c32" shape="rect">add_double_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, double <span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Add a single floating point metric to this action. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1d0806ccd1da50be208dc74c3c325425f" shape="rect">add_integer_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Add a single integer metric to this action. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1d9069f195966279c3fd357bc084b4dbe" shape="rect">add_string_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Add a single string metric to this action. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1ea93ad95cd1da9f60bb3f461c3bf6112" shape="rect">metric_by_name</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric_name</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a single metric by name. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​set &lt; std::​string &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1IAction_10fb0721a84cc06e14f6256ccbea89bf6" shape="rect">metric_names</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the set of metric names. </span></dd>
+                        <dt><span class="member_type">virtual const char*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1f59982bc9db08f747ad76c90e0df1eb2" shape="rect">name</a> (  NameBase<span>&nbsp;</span><span class="keyword keyword apiItemName">base</span> = <span class="ph ph apiData">NameBase::FUNCTION</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the action name. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface. " shape="rect">INvtxState</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_10dae0013bcfa77ecd4e419d0a908eaf5" shape="rect">nvtx_state</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the NVTX state associated with this action. </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_16ce615f3ec4e3f5fd1554583dd6bcedf" shape="rect">ptx_by_pc</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the PTX for a function address within this action. </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_1a1fc608333aefe67f0559ab03094acb4" shape="rect">sass_by_pc</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the disassembled SASS for a function address within this action. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​map &lt; std::​string, std::​string &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1IAction_14fec966a03e09ccada356918401d54be" shape="rect">source_files</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the source files associated with an action. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface. " shape="rect">ISourceInfo</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IAction_17a9143fce3f506af046cc236ee2f3b99" shape="rect">source_info</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the source info for a function address within this action. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1a4a8c1abae562cd537f16417ec540c32" id="classNV_1_1Rules_1_1IAction_1a4a8c1abae562cd537f16417ec540c32" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1a4a8c1abae562cd537f16417ec540c32" shape="rect">add_double_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, double <span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Add a single floating point metric to this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">the new <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">IMetric</a></p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Add a single floating point metric with name <tt class="ph tt code">value_name</tt> and kind <tt class="ph tt code">value_kind</tt> to this action 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1d0806ccd1da50be208dc74c3c325425f" id="classNV_1_1Rules_1_1IAction_1d0806ccd1da50be208dc74c3c325425f" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1d0806ccd1da50be208dc74c3c325425f" shape="rect">add_integer_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Add a single integer metric to this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">the new <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">IMetric</a></p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Add a single integer metric to with name <tt class="ph tt code">value_name</tt> and kind <tt class="ph tt code">value_kind</tt> this action. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1d9069f195966279c3fd357bc084b4dbe" id="classNV_1_1Rules_1_1IAction_1d9069f195966279c3fd357bc084b4dbe" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1d9069f195966279c3fd357bc084b4dbe" shape="rect">add_string_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value_name</span>, IMetric::​ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">value</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Add a single string metric to this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">the new <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">IMetric</a></p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Add a single string metric with name <tt class="ph tt code">value_name</tt> and kind <tt class="ph tt code">value_kind</tt> to this action 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1ea93ad95cd1da9f60bb3f461c3bf6112" id="classNV_1_1Rules_1_1IAction_1ea93ad95cd1da9f60bb3f461c3bf6112" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">IMetric</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1ea93ad95cd1da9f60bb3f461c3bf6112" shape="rect">metric_by_name</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric_name</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a single metric by name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a single <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface." shape="rect">IMetric</a> by <tt class="ph tt code">metric_name</tt></p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_10fb0721a84cc06e14f6256ccbea89bf6" id="classNV_1_1Rules_1_1IAction_10fb0721a84cc06e14f6256ccbea89bf6" shape="rect">
+                                 <!-- --></a><span>virtual std::​set &lt; std::​string &gt;  <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_10fb0721a84cc06e14f6256ccbea89bf6" shape="rect">metric_names</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the set of metric names. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the set of metrics available for this action </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1f59982bc9db08f747ad76c90e0df1eb2" id="classNV_1_1Rules_1_1IAction_1f59982bc9db08f747ad76c90e0df1eb2" shape="rect">
+                                 <!-- --></a><span>virtual const char* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1f59982bc9db08f747ad76c90e0df1eb2" shape="rect">name</a> (  NameBase<span>&nbsp;</span><span class="keyword keyword apiItemName">base</span> = <span class="ph ph apiData">NameBase::FUNCTION</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the action name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the action name </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_10dae0013bcfa77ecd4e419d0a908eaf5" id="classNV_1_1Rules_1_1IAction_10dae0013bcfa77ecd4e419d0a908eaf5" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface. " shape="rect">INvtxState</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_10dae0013bcfa77ecd4e419d0a908eaf5" shape="rect">nvtx_state</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the NVTX state associated with this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">a new <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">INvtxState</a> object if any NVTX state is available for this action. 
+                                 </p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p></p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_16ce615f3ec4e3f5fd1554583dd6bcedf" id="classNV_1_1Rules_1_1IAction_16ce615f3ec4e3f5fd1554583dd6bcedf" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_16ce615f3ec4e3f5fd1554583dd6bcedf" shape="rect">ptx_by_pc</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the PTX for a function address within this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">PTX string. An empty string is returned if no PTX is associated with this address</p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Get the PTX for a function <tt class="ph tt code">address</tt> within this action. The address is expected to be absolute, i.e. as obtained from the correlation IDs of source-correlated
+                                    metrics. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_1a1fc608333aefe67f0559ab03094acb4" id="classNV_1_1Rules_1_1IAction_1a1fc608333aefe67f0559ab03094acb4" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_1a1fc608333aefe67f0559ab03094acb4" shape="rect">sass_by_pc</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the disassembled SASS for a function address within this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">SASS string. An empty string is returned if no SASS is associated with this address</p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Get the disassembled SASS for a function <tt class="ph tt code">address</tt> within this action. The address is expected to be absolute, i.e. as obtained from the correlation IDs of source-correlated
+                                    metrics. The SASS may include formatting whitespace as generated by the disassembler. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_14fec966a03e09ccada356918401d54be" id="classNV_1_1Rules_1_1IAction_14fec966a03e09ccada356918401d54be" shape="rect">
+                                 <!-- --></a><span>virtual std::​map &lt; std::​string, std::​string &gt;  <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_14fec966a03e09ccada356918401d54be" shape="rect">source_files</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the source files associated with an action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">a map from file name to file content</p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Get the map of source files associated with this action, along with their content. If content is not available for a file
+                                    (e.g. because it hadn't been imported into the report), the file name will map to an empty string. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IAction_17a9143fce3f506af046cc236ee2f3b99" id="classNV_1_1Rules_1_1IAction_17a9143fce3f506af046cc236ee2f3b99" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface. " shape="rect">ISourceInfo</a>* <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">NV::​Rules::​IAction</a>::<a href="annotated.html#classNV_1_1Rules_1_1IAction_17a9143fce3f506af046cc236ee2f3b99" shape="rect">source_info</a> (  uint64_t<span>&nbsp;</span><span class="keyword keyword apiItemName">address</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the source info for a function address within this action. </div>
+                              <div class="section">
+                                 <h6 class="return_header">Returns</h6>
+                                 <p class="return">a new <a class="xref" href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface." shape="rect">ISourceInfo</a> object if it is available
+                                 </p>
+                              </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>
+                                    Get the source info for <tt class="ph tt code">address</tt> within this action. Addresses are commonly obtained as correlation ids of source-correlated metrics. 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IContext"><a name="classNV_1_1Rules_1_1IContext" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.2.&nbsp;NV::Rules::IContext Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__HW" title="Objects of heavyweight classes are lifetime-managed by the tool." shape="rect">NvRules Tool lifetime-managed classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>The rule context provides the rule with access to all collected data, properties and means to relay results back to the caller.
+                           
+                        </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface. " shape="rect">IController</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IContext_19babfd8b141225b911ddb5e8ab2c6fa8" shape="rect">controller</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the controller object. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">IFrontend</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IContext_1c27bde93bab5d35e5f29d3502e358ccc" shape="rect">frontend</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the frontend object. </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IBaseContext_1b4abb501227aabd4ccb4cf286a096eaf" shape="rect">get_version</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get version number of this interface. </span></dd>
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IBaseContext_1f49061bef19319be9db9da60f584dd41" shape="rect">handle_exception</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">msg</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Context exception handler. </span></dd>
+                        <dt><span class="member_type">virtual size_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IContext_115312e7abdc1fbb58fa0e56c325fb1ad" shape="rect">num_ranges</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the number of available ranges. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface. " shape="rect">IRange</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IContext_19191f917750cd2418702c018d9f1dc41" shape="rect">range_by_idx</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a single range by index. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IContext_19babfd8b141225b911ddb5e8ab2c6fa8" id="classNV_1_1Rules_1_1IContext_19babfd8b141225b911ddb5e8ab2c6fa8" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface. " shape="rect">IController</a>* <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IContext_19babfd8b141225b911ddb5e8ab2c6fa8" shape="rect">controller</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the controller object. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface." shape="rect">IController</a> object 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IContext_1c27bde93bab5d35e5f29d3502e358ccc" id="classNV_1_1Rules_1_1IContext_1c27bde93bab5d35e5f29d3502e358ccc" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">IFrontend</a>* <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IContext_1c27bde93bab5d35e5f29d3502e358ccc" shape="rect">frontend</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the frontend object. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface." shape="rect">IFrontend</a> object 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IBaseContext_1b4abb501227aabd4ccb4cf286a096eaf" id="classNV_1_1Rules_1_1IBaseContext_1b4abb501227aabd4ccb4cf286a096eaf" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IBaseContext_1b4abb501227aabd4ccb4cf286a096eaf" shape="rect">get_version</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get version number of this interface. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Returns the version number of this interface as a string of the form &lt;year&gt;.&lt;major&gt;.&lt;minor&gt; It matches the Nsight Compute
+                                    version this interface originates from. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IBaseContext_1f49061bef19319be9db9da60f584dd41" id="classNV_1_1Rules_1_1IBaseContext_1f49061bef19319be9db9da60f584dd41" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IBaseContext_1f49061bef19319be9db9da60f584dd41" shape="rect">handle_exception</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">msg</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Context exception handler. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Should return true if a python exception should be set, false otherwise </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IContext_115312e7abdc1fbb58fa0e56c325fb1ad" id="classNV_1_1Rules_1_1IContext_115312e7abdc1fbb58fa0e56c325fb1ad" shape="rect">
+                                 <!-- --></a><span>virtual size_t <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IContext_115312e7abdc1fbb58fa0e56c325fb1ad" shape="rect">num_ranges</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the number of available ranges. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the number of available ranges </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IContext_19191f917750cd2418702c018d9f1dc41" id="classNV_1_1Rules_1_1IContext_19191f917750cd2418702c018d9f1dc41" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface. " shape="rect">IRange</a>* <a href="annotated.html#classNV_1_1Rules_1_1IContext" title="Context interface. " shape="rect">NV::​Rules::​IContext</a>::<a href="annotated.html#classNV_1_1Rules_1_1IContext_19191f917750cd2418702c018d9f1dc41" shape="rect">range_by_idx</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a single range by index. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a single <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface." shape="rect">IRange</a> by index 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IController"><a name="classNV_1_1Rules_1_1IController" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.3.&nbsp;NV::Rules::IController Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__HW" title="Objects of heavyweight classes are lifetime-managed by the tool." shape="rect">NvRules Tool lifetime-managed classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>The controller can be used to interact with the tool runtime, e.g. to signal the tools to propose a follow-up rule. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual void&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IController_1347e05e7c40dca5d971a98922532e0b3" shape="rect">propose_rule</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">rule</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc"></span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IController_1347e05e7c40dca5d971a98922532e0b3" id="classNV_1_1Rules_1_1IController_1347e05e7c40dca5d971a98922532e0b3" shape="rect">
+                                 <!-- --></a><span>virtual void <a href="annotated.html#classNV_1_1Rules_1_1IController" title="Controller interface. " shape="rect">NV::​Rules::​IController</a>::<a href="annotated.html#classNV_1_1Rules_1_1IController_1347e05e7c40dca5d971a98922532e0b3" shape="rect">propose_rule</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">rule</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section"></div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Propose the specified <tt class="ph tt code">rule</tt> in the current context 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IEvaluator"><a name="classNV_1_1Rules_1_1IEvaluator" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.4.&nbsp;NV::Rules::IEvaluator Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__HW" title="Objects of heavyweight classes are lifetime-managed by the tool." shape="rect">NvRules Tool lifetime-managed classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>The evaluator is used during rule setup to pass information about rule dependencies to the tool. For most cases, its Python
+                           wrapper functions can be used instead for convenience. 
+                        </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#unique_690867192" shape="rect">get_version</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get version number of this interface. </span></dd>
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#unique_425555127" shape="rect">handle_exception</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">msg</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Context exception handler. </span></dd>
+                        <dt><span class="member_type">virtual void&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IEvaluator_1c34f76d0ccaed699f1b3e0e4b7352146" shape="rect">require_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc"></span></dd>
+                        <dt><span class="member_type">virtual void&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IEvaluator_1e84108af9b0429d3d054ab43a2284a66" shape="rect">require_rule</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">rule</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc"></span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="unique_690867192" id="unique_690867192" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface. " shape="rect">NV::​Rules::​IEvaluator</a>::<a href="annotated.html#unique_690867192" shape="rect">get_version</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get version number of this interface. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Returns the version number of this interface as a string of the form &lt;year&gt;.&lt;major&gt;.&lt;minor&gt; It matches the Nsight Compute
+                                    version this interface originates from. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="unique_425555127" id="unique_425555127" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface. " shape="rect">NV::​Rules::​IEvaluator</a>::<a href="annotated.html#unique_425555127" shape="rect">handle_exception</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">msg</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Context exception handler. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Should return true if a python exception should be set, false otherwise </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IEvaluator_1c34f76d0ccaed699f1b3e0e4b7352146" id="classNV_1_1Rules_1_1IEvaluator_1c34f76d0ccaed699f1b3e0e4b7352146" shape="rect">
+                                 <!-- --></a><span>virtual void <a href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface. " shape="rect">NV::​Rules::​IEvaluator</a>::<a href="annotated.html#classNV_1_1Rules_1_1IEvaluator_1c34f76d0ccaed699f1b3e0e4b7352146" shape="rect">require_metric</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section"></div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Define that the specified <tt class="ph tt code">metric</tt> must have been collected in order for the calling rule to be applied. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IEvaluator_1e84108af9b0429d3d054ab43a2284a66" id="classNV_1_1Rules_1_1IEvaluator_1e84108af9b0429d3d054ab43a2284a66" shape="rect">
+                                 <!-- --></a><span>virtual void <a href="annotated.html#classNV_1_1Rules_1_1IEvaluator" title="Evaluator interface. " shape="rect">NV::​Rules::​IEvaluator</a>::<a href="annotated.html#classNV_1_1Rules_1_1IEvaluator_1e84108af9b0429d3d054ab43a2284a66" shape="rect">require_rule</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">rule</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section"></div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Define that the specified <tt class="ph tt code">rule</tt> must be available and ready to be applied in order for the calling rule to be applied itself. 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IFrontend"><a name="classNV_1_1Rules_1_1IFrontend" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.5.&nbsp;NV::Rules::IFrontend Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__HW" title="Objects of heavyweight classes are lifetime-managed by the tool." shape="rect">NvRules Tool lifetime-managed classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>The frontend is responsible for relaying messages and results to the caller via user interfaces, logs or output files. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IFrontend_13e62f46a3636d644b507bf142133bb8e" shape="rect">focus_metric</a> (  int <span>&nbsp;</span><span class="keyword keyword apiItemName">message_id</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric_name</span>, double <span>&nbsp;</span><span class="keyword keyword apiItemName">metric_value</span>, Severity<span>&nbsp;</span><span class="keyword keyword apiItemName">severity</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">info</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Rule focus metric message. </span></dd>
+                        <dt><span class="member_type">virtual void&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IFrontend_1c00fcb56cb457cd1dfc9643e736e1057" shape="rect">load_chart_from_file</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">filename</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc"></span></dd>
+                        <dt><span class="member_type">virtual int &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IFrontend_1a935da7feb246ef86d06c51eae6b52bd" shape="rect">message</a> (  MsgType<span>&nbsp;</span><span class="keyword keyword apiItemName">type</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">str</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">name</span> = <span class="ph ph apiData">nullptr</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Rule result message. </span></dd>
+                        <dt><span class="member_type">virtual int &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IFrontend_160ef48a3efdb1e49c6e3e39fb9bbd8c1" shape="rect">message</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">str</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">name</span> = <span class="ph ph apiData">nullptr</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Rule result message. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IFrontend_13e62f46a3636d644b507bf142133bb8e" id="classNV_1_1Rules_1_1IFrontend_13e62f46a3636d644b507bf142133bb8e" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">NV::​Rules::​IFrontend</a>::<a href="annotated.html#classNV_1_1Rules_1_1IFrontend_13e62f46a3636d644b507bf142133bb8e" shape="rect">focus_metric</a> (  int <span>&nbsp;</span><span class="keyword keyword apiItemName">message_id</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">metric_name</span>, double <span>&nbsp;</span><span class="keyword keyword apiItemName">metric_value</span>, Severity<span>&nbsp;</span><span class="keyword keyword apiItemName">severity</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">info</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Rule focus metric message. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Issues a focus metric message to the frontend, e.g. to indicate a key metric that triggered the rule output. Can be associated
+                                    with a prior message using its <tt class="ph tt code">message_id</tt> . The <tt class="ph tt code">severity</tt> can be used to indicate this metric's impact/severity on the result. The <tt class="ph tt code">info</tt> field can be set to a descriptive string for further information, e.g. the calculation leading to this metric being focused.
+                                    
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IFrontend_1c00fcb56cb457cd1dfc9643e736e1057" id="classNV_1_1Rules_1_1IFrontend_1c00fcb56cb457cd1dfc9643e736e1057" shape="rect">
+                                 <!-- --></a><span>virtual void <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">NV::​Rules::​IFrontend</a>::<a href="annotated.html#classNV_1_1Rules_1_1IFrontend_1c00fcb56cb457cd1dfc9643e736e1057" shape="rect">load_chart_from_file</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">filename</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section"></div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Load a ProfilerSection google protcol buffer chart from <tt class="ph tt code">filename</tt></p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IFrontend_1a935da7feb246ef86d06c51eae6b52bd" id="classNV_1_1Rules_1_1IFrontend_1a935da7feb246ef86d06c51eae6b52bd" shape="rect">
+                                 <!-- --></a><span>virtual int  <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">NV::​Rules::​IFrontend</a>::<a href="annotated.html#classNV_1_1Rules_1_1IFrontend_1a935da7feb246ef86d06c51eae6b52bd" shape="rect">message</a> (  MsgType<span>&nbsp;</span><span class="keyword keyword apiItemName">type</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">str</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">name</span> = <span class="ph ph apiData">nullptr</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Rule result message. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Issues a message <tt class="ph tt code">str</tt> with a specific message <tt class="ph tt code">type</tt> and optional name <tt class="ph tt code">name</tt> to the frontend. Returns a message ID that is unique in this rule invocation. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IFrontend_160ef48a3efdb1e49c6e3e39fb9bbd8c1" id="classNV_1_1Rules_1_1IFrontend_160ef48a3efdb1e49c6e3e39fb9bbd8c1" shape="rect">
+                                 <!-- --></a><span>virtual int  <a href="annotated.html#classNV_1_1Rules_1_1IFrontend" title="Frontend interface. " shape="rect">NV::​Rules::​IFrontend</a>::<a href="annotated.html#classNV_1_1Rules_1_1IFrontend_160ef48a3efdb1e49c6e3e39fb9bbd8c1" shape="rect">message</a> (  const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">str</span>, const char*<span>&nbsp;</span><span class="keyword keyword apiItemName">name</span> = <span class="ph ph apiData">nullptr</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Rule result message. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Issues a message <tt class="ph tt code">str</tt> to the frontend with the default MsgType and optional name <tt class="ph tt code">name</tt> . Returns a message ID that is unique in this rule invocation. 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IMetric"><a name="classNV_1_1Rules_1_1IMetric" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.6.&nbsp;NV::Rules::IMetric Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents a single, named metric. A metric can carry one value or multiple, if it is an instanced metric. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual double &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1dd638709eb46c42a2eb391c2b248e564" shape="rect">as_double</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a value from the metric list as double. </span></dd>
+                        <dt><span class="member_type">virtual double &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_18ab4e3bc71a2944a13fafd5c17ef129f" shape="rect">as_double</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric value as double. </span></dd>
+                        <dt><span class="member_type">virtual const char*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_10b123efe38e009c645f4e934d242e7ab" shape="rect">as_string</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a value from the metric list as string. </span></dd>
+                        <dt><span class="member_type">virtual const char*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_13b61e1e846fc00db6979d71bf58ec59c" shape="rect">as_string</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric value as string. </span></dd>
+                        <dt><span class="member_type">virtual uint64_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1a0897b7c177157fc5074ce8a391e0704" shape="rect">as_uint64</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a value from the metric list as 64bit integer. </span></dd>
+                        <dt><span class="member_type">virtual uint64_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1d61365e0f757a5271244a0ff528e3494" shape="rect">as_uint64</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric value as 64bit integer. </span></dd>
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_161ddb77871e0312cf149bd6c8665aa7b" shape="rect">has_value</a> (  ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Check if the metric has a value of a specific kind. </span></dd>
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1206afebbf08d13efdd35a78105258a7c" shape="rect">has_value</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Check if the metric has a non-instanced value. </span></dd>
+                        <dt><span class="member_type">virtual ValueKind&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_172b08b025806ef5c131edda9f89ff2a6" shape="rect">kind</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric list entry value kind. </span></dd>
+                        <dt><span class="member_type">virtual ValueKind&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_110ffab980e50b79b18fdb2b671b199a9" shape="rect">kind</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric value kind. </span></dd>
+                        <dt><span class="member_type">virtual const char*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1b5771110a77f47a30e778bf021edbc38" shape="rect">name</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the metric name. </span></dd>
+                        <dt><span class="member_type">virtual size_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IMetric_1e16ec48cbc1c72547ca4a71ebed19ed1" shape="rect">num_instances</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the number of values in the metric list. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1dd638709eb46c42a2eb391c2b248e564" id="classNV_1_1Rules_1_1IMetric_1dd638709eb46c42a2eb391c2b248e564" shape="rect">
+                                 <!-- --></a><span>virtual double  <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1dd638709eb46c42a2eb391c2b248e564" shape="rect">as_double</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a value from the metric list as double. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a value <tt class="ph tt code">instance</tt> from the metric list as double 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_18ab4e3bc71a2944a13fafd5c17ef129f" id="classNV_1_1Rules_1_1IMetric_18ab4e3bc71a2944a13fafd5c17ef129f" shape="rect">
+                                 <!-- --></a><span>virtual double  <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_18ab4e3bc71a2944a13fafd5c17ef129f" shape="rect">as_double</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric value as double. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric value as double </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_10b123efe38e009c645f4e934d242e7ab" id="classNV_1_1Rules_1_1IMetric_10b123efe38e009c645f4e934d242e7ab" shape="rect">
+                                 <!-- --></a><span>virtual const char* <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_10b123efe38e009c645f4e934d242e7ab" shape="rect">as_string</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a value from the metric list as string. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a value <tt class="ph tt code">instance</tt> from the metric list as string 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_13b61e1e846fc00db6979d71bf58ec59c" id="classNV_1_1Rules_1_1IMetric_13b61e1e846fc00db6979d71bf58ec59c" shape="rect">
+                                 <!-- --></a><span>virtual const char* <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_13b61e1e846fc00db6979d71bf58ec59c" shape="rect">as_string</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric value as string. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric value as string </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1a0897b7c177157fc5074ce8a391e0704" id="classNV_1_1Rules_1_1IMetric_1a0897b7c177157fc5074ce8a391e0704" shape="rect">
+                                 <!-- --></a><span>virtual uint64_t <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1a0897b7c177157fc5074ce8a391e0704" shape="rect">as_uint64</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a value from the metric list as 64bit integer. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a value <tt class="ph tt code">instance</tt> from the metric list as 64bit integer 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1d61365e0f757a5271244a0ff528e3494" id="classNV_1_1Rules_1_1IMetric_1d61365e0f757a5271244a0ff528e3494" shape="rect">
+                                 <!-- --></a><span>virtual uint64_t <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1d61365e0f757a5271244a0ff528e3494" shape="rect">as_uint64</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric value as 64bit integer. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric value as 64bit integer </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_161ddb77871e0312cf149bd6c8665aa7b" id="classNV_1_1Rules_1_1IMetric_161ddb77871e0312cf149bd6c8665aa7b" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_161ddb77871e0312cf149bd6c8665aa7b" shape="rect">has_value</a> (  ValueKind<span>&nbsp;</span><span class="keyword keyword apiItemName">value_kind</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Check if the metric has a value of a specific kind. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Check if the metric has a value of a specific <tt class="ph tt code">value_kind</tt></p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1206afebbf08d13efdd35a78105258a7c" id="classNV_1_1Rules_1_1IMetric_1206afebbf08d13efdd35a78105258a7c" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1206afebbf08d13efdd35a78105258a7c" shape="rect">has_value</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Check if the metric has a non-instanced value. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Check if the metric has a non-instanced value. If true, the metric may still have instance values, too. </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_172b08b025806ef5c131edda9f89ff2a6" id="classNV_1_1Rules_1_1IMetric_172b08b025806ef5c131edda9f89ff2a6" shape="rect">
+                                 <!-- --></a><span>virtual ValueKind <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_172b08b025806ef5c131edda9f89ff2a6" shape="rect">kind</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">instance</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric list entry value kind. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric list entry value kind </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_110ffab980e50b79b18fdb2b671b199a9" id="classNV_1_1Rules_1_1IMetric_110ffab980e50b79b18fdb2b671b199a9" shape="rect">
+                                 <!-- --></a><span>virtual ValueKind <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_110ffab980e50b79b18fdb2b671b199a9" shape="rect">kind</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric value kind. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric value kind </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1b5771110a77f47a30e778bf021edbc38" id="classNV_1_1Rules_1_1IMetric_1b5771110a77f47a30e778bf021edbc38" shape="rect">
+                                 <!-- --></a><span>virtual const char* <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1b5771110a77f47a30e778bf021edbc38" shape="rect">name</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the metric name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the metric name </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IMetric_1e16ec48cbc1c72547ca4a71ebed19ed1" id="classNV_1_1Rules_1_1IMetric_1e16ec48cbc1c72547ca4a71ebed19ed1" shape="rect">
+                                 <!-- --></a><span>virtual size_t <a href="annotated.html#classNV_1_1Rules_1_1IMetric" title="Metric interface. " shape="rect">NV::​Rules::​IMetric</a>::<a href="annotated.html#classNV_1_1Rules_1_1IMetric_1e16ec48cbc1c72547ca4a71ebed19ed1" shape="rect">num_instances</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the number of values in the metric list. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the number of values in the metric list </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1INvtxDomainInfo"><a name="classNV_1_1Rules_1_1INvtxDomainInfo" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.7.&nbsp;NV::Rules::INvtxDomainInfo Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents a single NVTX domain of the NVTX state, including all ranges associated with this domain. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxDomainInfo_170493918d21aa82b9f0c40ff10c58f66" shape="rect">name</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the domain name. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">INvtxRange</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxDomainInfo_17cce77c01dc808c100856cd9cb9d30f2" shape="rect">push_pop_range</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a push/pop range object. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​vector &lt; std::​string &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1INvtxDomainInfo_18b24f2c85a7bfeaff9f04ddb68f1a50e" shape="rect">push_pop_ranges</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the list of push/pop range names. </span></dd>
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">INvtxRange</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxDomainInfo_10deb0b1e8d0c9486576b5f71114a4a7c" shape="rect">start_end_range</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a start/end range object. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​vector &lt; std::​string &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1INvtxDomainInfo_132523698a2cb609dba0dfcb7163ead1c" shape="rect">start_end_ranges</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the list of start/end range names. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxDomainInfo_170493918d21aa82b9f0c40ff10c58f66" id="classNV_1_1Rules_1_1INvtxDomainInfo_170493918d21aa82b9f0c40ff10c58f66" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">NV::​Rules::​INvtxDomainInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo_170493918d21aa82b9f0c40ff10c58f66" shape="rect">name</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the domain name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the name of this domain </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxDomainInfo_17cce77c01dc808c100856cd9cb9d30f2" id="classNV_1_1Rules_1_1INvtxDomainInfo_17cce77c01dc808c100856cd9cb9d30f2" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">INvtxRange</a>* <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">NV::​Rules::​INvtxDomainInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo_17cce77c01dc808c100856cd9cb9d30f2" shape="rect">push_pop_range</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a push/pop range object. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a push/pop <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">INvtxRange</a> object by it's running index . The index is identical to the range's order on the call stack. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxDomainInfo_18b24f2c85a7bfeaff9f04ddb68f1a50e" id="classNV_1_1Rules_1_1INvtxDomainInfo_18b24f2c85a7bfeaff9f04ddb68f1a50e" shape="rect">
+                                 <!-- --></a><span>virtual std::​vector &lt; std::​string &gt;  <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">NV::​Rules::​INvtxDomainInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo_18b24f2c85a7bfeaff9f04ddb68f1a50e" shape="rect">push_pop_ranges</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the list of push/pop range names. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the sorted list of stacked push/pop range names in this domain, associated with the current <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">INvtxState</a>. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxDomainInfo_10deb0b1e8d0c9486576b5f71114a4a7c" id="classNV_1_1Rules_1_1INvtxDomainInfo_10deb0b1e8d0c9486576b5f71114a4a7c" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">INvtxRange</a>* <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">NV::​Rules::​INvtxDomainInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo_10deb0b1e8d0c9486576b5f71114a4a7c" shape="rect">start_end_range</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a start/end range object. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a start/end <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface." shape="rect">INvtxRange</a> object by it's running index . 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxDomainInfo_132523698a2cb609dba0dfcb7163ead1c" id="classNV_1_1Rules_1_1INvtxDomainInfo_132523698a2cb609dba0dfcb7163ead1c" shape="rect">
+                                 <!-- --></a><span>virtual std::​vector &lt; std::​string &gt;  <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">NV::​Rules::​INvtxDomainInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo_132523698a2cb609dba0dfcb7163ead1c" shape="rect">start_end_ranges</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the list of start/end range names. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the list of start/end range names in this domain, associated with the current <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface." shape="rect">INvtxState</a>. 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1INvtxRange"><a name="classNV_1_1Rules_1_1INvtxRange" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.8.&nbsp;NV::Rules::INvtxRange Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents a single NVTX Push/Pop or Start/End range. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual uint32_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_189bb12e852893f9d986e644a1313539f" shape="rect">category</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the category attribute value. </span></dd>
+                        <dt><span class="member_type">virtual uint32_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_164a848c34a773c75766fac158a1c71b6" shape="rect">color</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the color attribute value. </span></dd>
+                        <dt><span class="member_type">virtual bool &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" shape="rect">has_attributes</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Check if the range has event attributes. </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_1803ffa94f25db245fad39587d749b72b" shape="rect">message</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the message attribute value. </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_15530853f560b3abbd9489b2047051ff2" shape="rect">name</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the range name. </span></dd>
+                        <dt><span class="member_type">virtual double &nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_14260113bf9ca338725d3ce0d44af42c6" shape="rect">payload_as_double</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the payload attribute value as double (64-bit floating point). </span></dd>
+                        <dt><span class="member_type">virtual std::​string&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_17ccaafc8a638e2ccdd296d271fa33f13" shape="rect">payload_as_string</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the payload attribute value as a string. </span></dd>
+                        <dt><span class="member_type">virtual uint64_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_1a179dee9b8f7868f815a3b376e1a22ad" shape="rect">payload_as_uint64</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the payload attribute value as uint64. </span></dd>
+                        <dt><span class="member_type">virtual PayloadType&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" shape="rect">payload_type</a> (  )  const =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the payload attribute type. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_189bb12e852893f9d986e644a1313539f" id="classNV_1_1Rules_1_1INvtxRange_189bb12e852893f9d986e644a1313539f" shape="rect">
+                                 <!-- --></a><span>virtual uint32_t <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_189bb12e852893f9d986e644a1313539f" shape="rect">category</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the category attribute value. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the category attribute value. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_164a848c34a773c75766fac158a1c71b6" id="classNV_1_1Rules_1_1INvtxRange_164a848c34a773c75766fac158a1c71b6" shape="rect">
+                                 <!-- --></a><span>virtual uint32_t <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_164a848c34a773c75766fac158a1c71b6" shape="rect">color</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the color attribute value. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the color attribute value. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" id="classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" shape="rect">
+                                 <!-- --></a><span>virtual bool  <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" shape="rect">has_attributes</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Check if the range has event attributes. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Check if the range has event attributes, such as <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_164a848c34a773c75766fac158a1c71b6" title="Get the color attribute value." shape="rect">INvtxRange::color</a>, <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_189bb12e852893f9d986e644a1313539f" title="Get the category attribute value." shape="rect">INvtxRange::category</a>, or <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_1803ffa94f25db245fad39587d749b72b" title="Get the message attribute value." shape="rect">INvtxRange::message</a>. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_1803ffa94f25db245fad39587d749b72b" id="classNV_1_1Rules_1_1INvtxRange_1803ffa94f25db245fad39587d749b72b" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_1803ffa94f25db245fad39587d749b72b" shape="rect">message</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the message attribute value. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the message attribute value. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_15530853f560b3abbd9489b2047051ff2" id="classNV_1_1Rules_1_1INvtxRange_15530853f560b3abbd9489b2047051ff2" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_15530853f560b3abbd9489b2047051ff2" shape="rect">name</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the range name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the name of this range </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_14260113bf9ca338725d3ce0d44af42c6" id="classNV_1_1Rules_1_1INvtxRange_14260113bf9ca338725d3ce0d44af42c6" shape="rect">
+                                 <!-- --></a><span>virtual double  <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_14260113bf9ca338725d3ce0d44af42c6" shape="rect">payload_as_double</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the payload attribute value as double (64-bit floating point). </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the payload attribute value as a double (64-bit floating point). If the <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" title="Get the payload attribute type." shape="rect">INvtxRange::payload_type</a> cannot be casted to double, the returned value is undefined. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_17ccaafc8a638e2ccdd296d271fa33f13" id="classNV_1_1Rules_1_1INvtxRange_17ccaafc8a638e2ccdd296d271fa33f13" shape="rect">
+                                 <!-- --></a><span>virtual std::​string <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_17ccaafc8a638e2ccdd296d271fa33f13" shape="rect">payload_as_string</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the payload attribute value as a string. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the payload attribute value as a string. If the <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" title="Get the payload attribute type." shape="rect">INvtxRange::payload_type</a> cannot be casted to a string, the returned value is undefined. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_1a179dee9b8f7868f815a3b376e1a22ad" id="classNV_1_1Rules_1_1INvtxRange_1a179dee9b8f7868f815a3b376e1a22ad" shape="rect">
+                                 <!-- --></a><span>virtual uint64_t <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_1a179dee9b8f7868f815a3b376e1a22ad" shape="rect">payload_as_uint64</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the payload attribute value as uint64. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the payload attribute value as a uint64. If the <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" title="Get the payload attribute type." shape="rect">INvtxRange::payload_type</a> cannot be casted to uint64, the returned value is undefined. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned value is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" id="classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" shape="rect">
+                                 <!-- --></a><span>virtual PayloadType <a href="annotated.html#classNV_1_1Rules_1_1INvtxRange" title="NvtxRange interface. " shape="rect">NV::​Rules::​INvtxRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxRange_184dabfe74724ad3ba2df239828f9e6d9" shape="rect">payload_type</a> (  )  const [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the payload attribute type. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the payload attribute type. If <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxRange_12a46d3b04b6ee6f5975469fca3ac0cd9" title="Check if the range has event attributes." shape="rect">INvtxRange::has_attributes</a> returns false, the returned type is undefined. 
+                                 </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1INvtxState"><a name="classNV_1_1Rules_1_1INvtxState" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.9.&nbsp;NV::Rules::INvtxState Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents the NVTX (Nvidia Tools Extensions) state associated with a single action. </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">INvtxDomainInfo</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1INvtxState_1fc28fc0a732be5fe00a4c6c6839f14c6" shape="rect">domain_by_id</a> (  long long unsigned<span>&nbsp;</span><span class="keyword keyword apiItemName">id</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a domain by ID. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​vector &lt; long long unsigned &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1INvtxState_15076bcfa025181813a437690a5394c8c" shape="rect">domains</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the domain IDs. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxState_1fc28fc0a732be5fe00a4c6c6839f14c6" id="classNV_1_1Rules_1_1INvtxState_1fc28fc0a732be5fe00a4c6c6839f14c6" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1INvtxDomainInfo" title="NvtxDomainInfo interface. " shape="rect">INvtxDomainInfo</a>* <a href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface. " shape="rect">NV::​Rules::​INvtxState</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxState_1fc28fc0a732be5fe00a4c6c6839f14c6" shape="rect">domain_by_id</a> (  long long unsigned<span>&nbsp;</span><span class="keyword keyword apiItemName">id</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a domain by ID. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a single domain info object by its ID. Use <a class="xref" href="annotated.html#classNV_1_1Rules_1_1INvtxState_15076bcfa025181813a437690a5394c8c" title="Get the domain IDs." shape="rect">INvtxState::domains</a> to retrieve the list of valid domain IDs. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1INvtxState_15076bcfa025181813a437690a5394c8c" id="classNV_1_1Rules_1_1INvtxState_15076bcfa025181813a437690a5394c8c" shape="rect">
+                                 <!-- --></a><span>virtual std::​vector &lt; long long unsigned &gt;  <a href="annotated.html#classNV_1_1Rules_1_1INvtxState" title="NvtxState interface. " shape="rect">NV::​Rules::​INvtxState</a>::<a href="annotated.html#classNV_1_1Rules_1_1INvtxState_15076bcfa025181813a437690a5394c8c" shape="rect">domains</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the domain IDs. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the list of domain IDs in this state </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1IRange"><a name="classNV_1_1Rules_1_1IRange" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.10.&nbsp;NV::Rules::IRange Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents a serial, ordered stream of execution, such as a CUDA stream. It holds one or more actions that were logically
+                           executing in this range 
+                        </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">IAction</a>*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IRange_126f2a2901fc90e9671c9d3b914bb5776" shape="rect">action_by_idx</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a single action by index. </span></dd>
+                        <dt><span class="member_long_type">virtual std::​set &lt; long long unsigned &gt; &nbsp;</span><span class="member_name_long_type"><a href="#classNV_1_1Rules_1_1IRange_1459409276362a834eb5f3862b5706e18" shape="rect">actions_by_nvtx</a> (  const std::​vector &lt; std::​string &gt; &amp;<span>&nbsp;</span><span class="keyword keyword apiItemName">includes</span>, const std::​vector &lt; std::​string &gt; &amp;<span>&nbsp;</span><span class="keyword keyword apiItemName">excludes</span> )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get a set of actions by their NVTX state. </span></dd>
+                        <dt><span class="member_type">virtual size_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1IRange_12a39ea86c47d1408ad590b917b513ab8" shape="rect">num_actions</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the number of actions. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IRange_126f2a2901fc90e9671c9d3b914bb5776" id="classNV_1_1Rules_1_1IRange_126f2a2901fc90e9671c9d3b914bb5776" shape="rect">
+                                 <!-- --></a><span>virtual <a href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface. " shape="rect">IAction</a>* <a href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface. " shape="rect">NV::​Rules::​IRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1IRange_126f2a2901fc90e9671c9d3b914bb5776" shape="rect">action_by_idx</a> (  size_t<span>&nbsp;</span><span class="keyword keyword apiItemName">idx</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a single action by index. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a single <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">IAction</a> by index <tt class="ph tt code">idx</tt>. 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IRange_1459409276362a834eb5f3862b5706e18" id="classNV_1_1Rules_1_1IRange_1459409276362a834eb5f3862b5706e18" shape="rect">
+                                 <!-- --></a><span>virtual std::​set &lt; long long unsigned &gt;  <a href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface. " shape="rect">NV::​Rules::​IRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1IRange_1459409276362a834eb5f3862b5706e18" shape="rect">actions_by_nvtx</a> (  const std::​vector &lt; std::​string &gt; &amp;<span>&nbsp;</span><span class="keyword keyword apiItemName">includes</span>, const std::​vector &lt; std::​string &gt; &amp;<span>&nbsp;</span><span class="keyword keyword apiItemName">excludes</span> )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get a set of actions by their NVTX state. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get a set of indizes to <a class="xref" href="annotated.html#classNV_1_1Rules_1_1IAction" title="Action interface." shape="rect">IAction</a> objects by their NVTX state. The state is defined using a series of <tt class="ph tt code">includes</tt> and <tt class="ph tt code">excludes</tt> . 
+                                 </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1IRange_12a39ea86c47d1408ad590b917b513ab8" id="classNV_1_1Rules_1_1IRange_12a39ea86c47d1408ad590b917b513ab8" shape="rect">
+                                 <!-- --></a><span>virtual size_t <a href="annotated.html#classNV_1_1Rules_1_1IRange" title="Range interface. " shape="rect">NV::​Rules::​IRange</a>::<a href="annotated.html#classNV_1_1Rules_1_1IRange_12a39ea86c47d1408ad590b917b513ab8" shape="rect">num_actions</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the number of actions. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the number of available actions in this range </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+                  <div class="topic reference apiRef apiClassifier cppClassifier cppClass cppGlobalClass" id="classNV_1_1Rules_1_1ISourceInfo"><a name="classNV_1_1Rules_1_1ISourceInfo" shape="rect">
+                        <!-- --></a><h3 class="topictitle3 cppClass">2.11.&nbsp;NV::Rules::ISourceInfo Class Reference</h3>
+                     <h3>[<a class="xref xref apiRelation cppClassifierModule" href="modules.html#group__NVRULES__LW" title="Objects of lightweight classes are garbage-collected by the python runtime." shape="rect">NvRules Python garbage-collected classes.</a>]
+                     </h3>
+                     <div class="section">
+                        <p>Represents the source correlation info for a specific function address within an action </p>
+                     </div>
+                     <h4 class="fake_sectiontitle member_header">Public Member Functions</h4>
+                     <dl class="members">
+                        <dt><span class="member_type">virtual const char*&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1ISourceInfo_183ffb53c368f4081d020976a4a8b8d1f" shape="rect">file_name</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the file name. </span></dd>
+                        <dt><span class="member_type">virtual uint32_t&nbsp;</span><span class="member_name"><a href="#classNV_1_1Rules_1_1ISourceInfo_1e69347443e117825b3b9093f8a2e0f7b" shape="rect">line</a> (  )  =0 </span></dt>
+                        <dd class="shortdesc"><span></span><span class="desc">Get the file line. </span></dd>
+                     </dl>
+                     <div class="description">
+                        <h4 class="sectiontitle">Member Functions</h4>
+                        <dl class="description">
+                           <dt class="description"><a name="classNV_1_1Rules_1_1ISourceInfo_183ffb53c368f4081d020976a4a8b8d1f" id="classNV_1_1Rules_1_1ISourceInfo_183ffb53c368f4081d020976a4a8b8d1f" shape="rect">
+                                 <!-- --></a><span>virtual const char* <a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface. " shape="rect">NV::​Rules::​ISourceInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo_183ffb53c368f4081d020976a4a8b8d1f" shape="rect">file_name</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the file name. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the file name, as embedded in the correlation info </p>
+                              </div>
+                           </dd>
+                           <dt class="description"><a name="classNV_1_1Rules_1_1ISourceInfo_1e69347443e117825b3b9093f8a2e0f7b" id="classNV_1_1Rules_1_1ISourceInfo_1e69347443e117825b3b9093f8a2e0f7b" shape="rect">
+                                 <!-- --></a><span>virtual uint32_t <a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo" title="SourceInfo interface. " shape="rect">NV::​Rules::​ISourceInfo</a>::<a href="annotated.html#classNV_1_1Rules_1_1ISourceInfo_1e69347443e117825b3b9093f8a2e0f7b" shape="rect">line</a> (  )  [inherited, pure virtual] </span></dt>
+                           <dd class="description">
+                              <div class="section">Get the file line. </div>
+                              <div class="section">
+                                 <h6 class="description_header">Description</h6>
+                                 <p>Get the line within file_name </p>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                  </div>
+               </div>
+               
+               <hr id="contents-end"></hr>
+               
+            </article>
+         </div>
+      </div>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/formatting/common.min.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-write.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="../common/scripts/google-analytics/google-analytics-tracker.js"></script>
+      <script type="text/javascript">_satellite.pageBottom();</script>
+      <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "998dc202-a267-4d8e-bce9-14debadb8d92", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></body>
+</html>

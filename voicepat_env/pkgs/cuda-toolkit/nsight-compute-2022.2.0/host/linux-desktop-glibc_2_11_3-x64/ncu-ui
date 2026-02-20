@@ -1,0 +1,26 @@
+#!/bin/bash
+MYPATH="$(readlink -f "$0")"
+export NV_AGORA_PATH="$(dirname "$MYPATH")"
+export LD_LIBRARY_PATH="$NV_AGORA_PATH:$LD_LIBRARY_PATH"
+
+nm -D /lib64/libk5crypto.so.3 2>/dev/null | grep 'U EVP_KDF_ctrl' >/dev/null
+if [[ "${PIPESTATUS[1]}" -eq 0 ]]; then
+  echo "libk5crypto.so.3 requires EVP_KDF_ctrl. Switching to system OpenSSL libraries" >&2
+  export LD_PRELOAD=/lib64/libcrypto.so.1.1:/lib64/libssl.so.1.1
+fi
+
+AGORA_USE_MESA_FALLBACK=false
+if ! "$NV_AGORA_PATH/OpenGLVersionChecker" "--minGLVersion=2.0.0"; then
+    AGORA_USE_MESA_FALLBACK=true
+fi
+
+if [ "$AGORA_USE_MESA_FALLBACK" = true ]; then
+    echo "Warning: OpenGL Version check failed. Falling back to Mesa software rendering." >&2
+    export LD_LIBRARY_PATH="$NV_AGORA_PATH/Mesa:$LD_LIBRARY_PATH"
+fi
+
+if [ "${NV_AGORA_FORCE_BREAKPAD:-0}" -ge 0 ]; then
+    "$NV_AGORA_PATH/CrashReporter" "NVIDIA Nsight Compute" "NVIDIA Nsight Compute" "2022.2.0.0 (build 31140043) (public-release)" "$NV_AGORA_PATH/ncu-ui.bin" "$@"
+else
+    "$NV_AGORA_PATH/ncu-ui.bin" "$@"
+fi

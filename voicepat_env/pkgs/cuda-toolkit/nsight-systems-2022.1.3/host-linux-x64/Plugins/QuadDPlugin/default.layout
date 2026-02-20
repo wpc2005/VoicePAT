@@ -1,0 +1,33 @@
+{
+    "floating": [
+    ],
+    "id": "NvidiaDockingLayout",
+    "root": {
+        "left": {
+            "contents": {
+                "docklocation": 5,
+                "lastfloatingheight": -1,
+                "lastfloatingwidth": -1,
+                "persistable": true,
+                "uuid": "{4a8e3fd9-6d0a-47f0-8254-d3fff5ba2ec9}",
+                "windowtype": "QuadDPlugin.ProjectExplorerWindow"
+            },
+            "type": "dock"
+        },
+        "orientation": "horizontal",
+        "right": {
+            "contents": {
+                "docklocation": 4,
+                "lastfloatingheight": -1,
+                "lastfloatingwidth": -1,
+                "persistable": true,
+                "uuid": "{c7a94feb-a010-55b2-ab7d-73eb3ab0c077}",
+                "windowtype": "CorePlugin.DocumentsWindow"
+            },
+            "type": "dock"
+        },
+        "split_sizes": "309 1052",
+        "type": "split"
+    },
+    "version": 1
+}
